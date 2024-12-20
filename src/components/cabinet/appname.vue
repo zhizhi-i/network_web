@@ -188,7 +188,7 @@ export default {
             "description"
         ];
         // 配置默认展示字段
-        const selectedFields = ref(["line_number", "operator", "dedicated_line_bandwidth", "a_end", "a_end_position", "a_odf_position", "z_end", "z_end_position", "z_odf_position"]);
+        const selectedFields = ref(["cabinet_num", "room_num", "floor_num", "machine_room_num", "machine_room", "customer_machine_room_num", "cabinet_type_details", "cost_party", "cabinet_type", "life_cycle", "power_state", "power_date", "network_architecture", "network_cluster", "group_number", "cabinet_specification"]);
         const openModal = ref(false);
         const currentPage = ref(1);
         // 分页大小设置
@@ -197,7 +197,7 @@ export default {
         const fetchData = async () => {
             try {
                 // 默认展示全部数据
-                const response = await axios.post("http://47.116.223.101:999/api/get_ins_by_condition", {
+                const response = await axios.post("http://apps.blueking.megaspeed-tech.ai/idc/cmdb/api/get_ins_by_condition", {
                     "obj_id": "cabinet",
                     "conditions": {}
                 });
@@ -277,7 +277,7 @@ export default {
                         conditions[key] = formInline[key];
                     }
                 }
-                const response = await axios.post('http://47.116.223.101:999/api/get_ins_by_condition', {
+                const response = await axios.post('http://apps.blueking.megaspeed-tech.ai/idc/cmdb/api/get_ins_by_condition', {
                     "obj_id": "cabinet",
                     "conditions": {
                         cabinet_num: formInline.cabinetNum,

@@ -136,7 +136,7 @@ export default {
         const fetchData = async () => {
             try {
                 // 默认展示全部数据
-                const response = await axios.post("http://47.116.223.101:999/api/get_ins_by_condition", {
+                const response = await axios.post("http://apps.blueking.megaspeed-tech.ai/idc/cmdb/api/get_ins_by_condition", {
                     "obj_id": "IDC_Deliver",
                     "conditions": {}
                 });
@@ -216,7 +216,7 @@ export default {
                         conditions[key] = formInline[key];
                     }
                 }
-                const response = await axios.post('http://47.116.223.101:999/api/get_ins_by_condition', {
+                const response = await axios.post('http://apps.blueking.megaspeed-tech.ai/idc/cmdb/api/get_ins_by_condition', {
                     "obj_id": "IDC_Deliver",
                     "conditions": {
                         customer: formInline.customer,
