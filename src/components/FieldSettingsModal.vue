@@ -167,18 +167,39 @@ export default {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 80%; /* 自适应宽度 */
+  max-width: 600px; /* 最大宽度 */
+  max-height: 80vh; /* 防止过高 */
+  overflow-y: auto; /* 超出高度时滚动 */
+  display: flex;
+  flex-wrap: wrap; /* 自动换行 */
+  gap: 10px; /* 字段之间的间距 */
+  align-items: flex-start; /* 顶部对齐 */
 }
 
+/* 标题样式 */
 .modal-content h2 {
+  width: 100%;
   margin-bottom: 20px;
 }
 
+/* 字段样式 */
 .modal-content label {
-  display: block;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap; /* 防止文本换行 */
 }
 
+/* 每个字段占据空间 */
+.modal-content label {
+  flex: 0 1 calc(33.33% - 10px); /* 每行最多 3 个字段，保持间距 */
+  box-sizing: border-box;
+}
+
+/* 按钮区域样式 */
 .modal-content button {
   margin-top: 20px;
   padding: 10px 15px;
@@ -187,6 +208,7 @@ export default {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  align-self: flex-end; /* 将按钮固定在右下角 */
 }
 
 .modal-content button:hover {
