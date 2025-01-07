@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>机柜投产总量</div>
+                        <div></div>
                         <div class="container-fluid m20 ">
                             <div class="row">
                                 <div class="col-md-12">
@@ -58,21 +58,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div>机柜投产趋势</div>
-                        <div class="container-fluid m20 ">
+                        <div></div>
+                        <div class="container-fluid mb0 ">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div style="height: 300px; position: relative;" id="chart_1733796033555"
-                                        class="king-chart-box chart-pie  k-chart" data-role="chart"></div>
+                                <div class="col-md-4">
+                                    <div style="height: 300px; -webkit-tap-highlight-color: transparent; user-select: none; background-color: rgba(0, 0, 0, 0); cursor: default;" id="chart_1736151845013" class="king-chart-box chart-pie " _echarts_instance_="1736147714703"></div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div style="height: 300px; -webkit-tap-highlight-color: transparent; user-select: none; background-color: rgba(0, 0, 0, 0); cursor: default;"
-                                        id="chart_1733796035525" class="king-chart-box chart-pie "
-                                        _echarts_instance_="1733792394497"></div>
+                                <div class="col-md-4">
+                                    <div style="height: 300px; -webkit-tap-highlight-color: transparent; user-select: none; background-color: rgba(0, 0, 0, 0); cursor: default;" id="chart_1736151848147" class="king-chart-box chart-pie " _echarts_instance_="1736147714704"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="height: 300px; -webkit-tap-highlight-color: transparent; user-select: none; background-color: rgba(0, 0, 0, 0); cursor: default;" id="chart_1736151850642" class="king-chart-box chart-pie " _echarts_instance_="1736147714705"></div>
                                 </div>
                             </div>
                         </div>
-                        <div>机柜占比</div>
+                        <div></div>
                     </div>
                 </div>
                 <!-- content end -->
